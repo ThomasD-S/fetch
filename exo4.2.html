@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tri</title>
+</head>
+<body>
+<script>
+    tab=[]
+    do {
+
+
+        var nb = prompt("saisir un entier, elle se fini si vous entrez une valeur >0");
+        parseInt(nb);
+        tab.push(nb)
+
+    }
+    while(nb>0)
+
+    fetch("test.json")
+    .then(response => response.json)
+    .then(tab=> {
+        console.log(tab);
+    });
+
+
+</script>
+
+</body>
+</html>
