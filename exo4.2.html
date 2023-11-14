@@ -18,7 +18,8 @@
     while(nb>0)
 
     fetch("test.json")
-    .then(response => response.json)
+    .then(response => {return response.json();})
+
     .then(tab=> {
         console.log(tab);
     });
